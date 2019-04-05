@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACT US</title>
+</head>
+<img src="https://img.freepik.com/free-vector/donor-day-background-with-message_23-2147625494.jpg?size=338&ext=jpg" width="900" height="450" />
+<style type="text/CSS">
+.button {
+    background-color:#BE81F7;
+    align:right;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-style:"Arial Black"
+}
+input.search{
+width:8em; height:3em;
+}
+
+h1{
+background-color:red;
+box-shadow:5px 5px 5px black;
+width:200px;
+padding:20px;
+}
+    body{
+    background-size:950px 500px;
+    }
+</style>
+<body>
+<form  method="POST" action="/Contact_details/">
+            {% csrf_token %}
+<h1 href="/contact_us/"><font size="5" face="bold" >FEEDBACK:</font></h1>
+<font size="4" face="Arial Black" color="indigo">Name:<input type="text" name="name"></font><br/><br/>
+<font size="4" face="Arial Black" color="indigo">Email:<input type="email" name="email"></font><br/><br/>
+<font size="4" face="Arial Black" color="indigo">Contact Number:<input type="number" name="contactnumber"></font><br/><br/>
+<font size="4" face="Arial Black" color="indigo">Enter your message:<input type="text" name="message"></font><br/><br/>
+<button class="button" value="Contact" type="submit" onclick="msg()">SUBMIT</button>
+</form>
+<script>
+    function msg(){
+     alert("ARE YOU SURE TO SUBMIT THE DETAILS....!");
+    }
+</script>
+</body>
+</html>

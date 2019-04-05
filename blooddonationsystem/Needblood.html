@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NeedBlood</title>
+</head>
+<style type="text/CSS">
+body{
+ background-size: cover;
+background-repeat: no-repeat;
+}
+    input.search{
+      width:8em; height:3em;
+    }
+</style>
+<body background="https://i.pinimg.com/originals/d9/40/ab/d940ab751c9c02d5b05adb0d7d715958.jpg">
+<h1>NEED BLOOD : </h1><br/>
+<form method="POST" action="/need_blood_details/">
+     {% csrf_token %}
+
+<font size="4" face="Arial Black" color="indigo">FirstName:<input type="text" name="firstname"></font><br/><br/>
+<font size="4" face="Arial Black" color="indigo">LastName:<input type="text" name="lastname"></font><br/><br/>
+<font size="4" face="Arial Black" color="indigo">Gender:<input type="text" name="gender"></font><br/><br/>
+    <font size="4" face="Arial Black" color="indigo">Email:<input type="email" name="email"></font><br/><br/>
+<font size="4" face="Arial Black" color="indigo">Contact Number:<input type="number" name="contactnumber"></font><br/><br/>
+<font size="4" face="Arial Black" color="indigo">DateofBirth:<input type="date" name="dateofbirth"></font><br/><br/>
+    <font size="4" face="Arial Black" color="indigo">Major?<input type="text" name="major"></font><br/><br/>
+
+<font size="4" face="Arial Black" color="indigo">BLOOD GROUP :<input type="text" name="bloodgroup"></font><br/><br/>
+<font size="4" face="Arial Black" color="indigo">REASON :<input type="text" name="bloodgroup"></font><br/><br/>
+<font size="4" face="Arial Black" color="indigo">HOSPITAL REFERENCE :<input type="text" name="bloodgroup"></font><br/><br/>
+
+<font size="7" face="Arial Black"><input type="submit" name="submit" value="SUBMIT" id="search" class="search" onclick="msg()"></font>
+
+</form>
+<script>
+    function msg()
+    {
+       alert("ARE YOU SURE TO SUBMIT THE DETAILS..!");
+    }
+</script>
+</body>
+</html>

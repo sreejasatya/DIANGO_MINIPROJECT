@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN PAGE</title>
+</head>
+<body background="https://i.pinimg.com/originals/d9/40/ab/d940ab751c9c02d5b05adb0d7d715958.jpg" width="500" height="500">
+<style type="text/CSS">
+.button {
+    background-color: #f44336;
+    align:right;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-style:"Arial Black"
+}
+input.search{
+width:8em; height:3em;
+}
+
+    body{
+
+
+background-repeat:no-repeat;
+background-size:1500px 700px;
+    }
+    .para{color:black;}
+    .abt{color:red;}
+</style>
+<center><h1 class="para" > LOGIN PAGE </h1></center>
+<form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+
+                {{ form}}
+            </fieldset><br/><br/>
+            <div class="form-group">
+                <button class="button" type="submit" >Login</button>
+            </div>
+        </form>
+
+
+
+</body>
+</html> 
